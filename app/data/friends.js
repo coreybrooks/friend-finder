@@ -1,8 +1,6 @@
-//<img id='theImg' src='../public/assets/images/jack.jpg' />
-
 var friendsArray = [{
     name: "jack",
-    photo: "<img class='photos' src='assets/images/jack.jpg'/>",
+    photo: "<img class='photos' src='http://chronicle.su/wp-content/uploads/jackblack2.jpg'/>",
     scores: [
         5,
         1,
@@ -18,7 +16,7 @@ var friendsArray = [{
 },
 {
     name: "jill",
-    photo: "<img class='photos' src='assets/images/jill.jpg'/>",
+    photo: "<img class='photos' src='https://pbs.twimg.com/profile_images/1862322105/image.jpg'/>",
     scores: [
         3,
         2,
@@ -33,7 +31,7 @@ var friendsArray = [{
     ]
 },{
     name: "john",
-    photo: "<img class='photos' src='assets/images/john.jpg'/>",
+    photo: "<img class='photos' src='http://img2.timeinc.net/people/i/2016/cbb/blog/160822/john-legend-b-800x600.jpg'/>",
     scores: [
         3,
         1,
@@ -48,7 +46,7 @@ var friendsArray = [{
     ]
 },{
     name: "jane",
-    photo: "<img class='photos' src='https://www.biography.com/.image/t_share/MTE1ODA0OTcxODY1MjQ1MTk3/jane-goodall-9542363-1-402.jpg'/>",
+    photo: "<img class='photos' src='http://womenineuropeanhistory.org/images/6/69/Goodall.jpg'/>",
     scores: [
         2,
         2,

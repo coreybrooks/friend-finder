@@ -177,8 +177,10 @@
    <script type="text/javascript">
    $(".formSubmit").on("click", function(event) {
 		event.preventDefault();
+		var link = $("#photo").val().trim();
+		var photoLink = "<img class='photos' src='" + link + "'/>";
 		
-		var newFriend = {name: $("#name").val().trim(), photo: $("#photo").val().trim(), 
+		var newFriend = {name: $("#name").val().trim(), photo: photoLink, 
 		scores: [$("#q1").val().charAt(0), $("#q2").val().charAt(0), $("#q3").val().charAt(0),
 		$("#q4").val().charAt(0), $("#q5").val().charAt(0), $("#q6").val().charAt(0), $("#q7").val().charAt(0),
 		 $("#q8").val().charAt(0), $("#q9").val().charAt(0), $("#q10").val().charAt(0),]}
