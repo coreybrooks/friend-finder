@@ -1,0 +1,18 @@
+body {
+    padding: 10px;
+    background-color: #3A0439;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+.formSubmit {
+    width: 100%;
+}
+.select {
+    width: 200px;
+}
+.photos {
+    width: 250px;
+}

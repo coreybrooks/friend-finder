@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Corey's Friend Finder</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/spacelab/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/assets/style/style.css">
+</head>
+<body>
+   <div class="container">
+
+	  <div class="panel panel-default">
+	    <div class="panel-heading panel-primary">
+	      <h1>Survey Questions</h1>
+	    </div>
+	    <div class="panel-body">
+		    <form>
+
+		        <h3><Strong>ABOUT YOU</Strong></h3>
+			    <h4>NAME (Required)</h4>
+			    <input type="text" class="form-control" name="" id="name">
+
+			    <h4>LINK TO PHOTO (Required)</h4>
+			    <input type="text" class="form-control" name="" id="photo">
+			    <br>
+		        
+		        <h4><strong>Question 1</strong></h4>
+		        <h5>Generally speaking, you get along with everyone.</h5>        
+			       <select class="form-control select" id="q1">
+			          <option>select an option</option>
+		              <option>1 (Stongly Agree)</option>
+		              <option>2</option>
+		              <option>3</option>
+		              <option>4</option>
+		              <option>5 (Strongly Disagree)</option>
+		           </select>
+		           <br>
+		           
+		        <h4><strong>Question 2</strong></h4>
+		        <h5>You would prefer to stay home instead of going to the club.</h5>        
+			       <select class="form-control select" id="q2">
+			          <option>select an option</option>
+		              <option>1 (Stongly Agree)</option>
+		              <option>2</option>
+		              <option>3</option>
+		              <option>4</option>
+		              <option>5 (Strongly Disagree)</option>
+		           </select>
+		           <br>
+
+		        <h4><strong>Question 3</strong></h4>
+		        <h5>You are good at listening to others’ problems.</h5>        
+			       <select class="form-control select" id="q3">
+			          <option>select an option</option>
+		              <option>1 (Stongly Agree)</option>
+		              <option>2</option>
+		              <option>3</option>
+		              <option>4</option>
+		              <option>5 (Strongly Disagree)</option>
+		           </select>
+		           <br>
+
+  		        <h4><strong>Question 4</strong></h4>
+		        <h5>You enjoy traveling.</h5>        
+			       <select class="form-control select" id="q4">
+			          <option>select an option</option>
+		              <option>1 (Stongly Agree)</option>
+		              <option>2</option>
+		              <option>3</option>
+		              <option>4</option>
+		              <option>5 (Strongly Disagree)</option>
+		           </select>
+		           <br>
+
+   		        <h4><strong>Question 5</strong></h4>
+		        <h5>You consider yourself to be a “dog person.”</h5>        
+			       <select class="form-control select" id="q5">
+			          <option>select an option</option>
+		              <option>1 (Stongly Agree)</option>
+		              <option>2</option>
+		              <option>3</option>
+		              <option>4</option>
+		              <option>5 (Strongly Disagree)</option>
+		           </select>
+		           <br>
+
+   		        <h4><strong>Question 6</strong></h4>
+		        <h5>Exercising and healthy eating habits are important to you</h5>        
+			       <select class="form-control select" id="q6">
+			          <option>select an option</option>
+		              <option>1 (Stongly Agree)</option>
+		              <option>2</option>
+		              <option>3</option>
+		              <option>4</option>
+		              <option>5 (Strongly Disagree)</option>
+		           </select>
+		           <br>
+
+   		        <h4><strong>Question 7</strong></h4>
+		        <h5>You enjoy camping.</h5>        
+			       <select class="form-control select" id="q7">
+			          <option>select an option</option>
+		              <option>1 (Stongly Agree)</option>
+		              <option>2</option>
+		              <option>3</option>
+		              <option>4</option>
+		              <option>5 (Strongly Disagree)</option>
+		           </select>
+		           <br>
+
+   		        <h4><strong>Question 8</strong></h4>
+		        <h5>Music is important in your life.</h5>        
+			       <select class="form-control select" id="q8">
+			          <option>select an option</option>
+		              <option>1 (Stongly Agree)</option>
+		              <option>2</option>
+		              <option>3</option>
+		              <option>4</option>
+		              <option>5 (Strongly Disagree)</option>
+		           </select>
+		           <br>
+
+   		        <h4><strong>Question 9</strong></h4>
+		        <h5>You consider yourself to be an intellectual.</h5>        
+			       <select class="form-control select" id="q9">
+			          <option>select an option</option>
+		              <option>1 (Stongly Agree)</option>
+		              <option>2</option>
+		              <option>3</option>
+		              <option>4</option>
+		              <option>5 (Strongly Disagree)</option>
+		           </select>
+		           <br>
+
+   		        <h4><strong>Question 10</strong></h4>
+		        <h5>Politics is a subject that interests you</h5>        
+			       <select class="form-control select" id="q10">
+			          <option>select an option</option>
+		              <option>1 (Stongly Agree)</option>
+		              <option>2</option>
+		              <option>3</option>
+		              <option>4</option>
+		              <option>5 (Strongly Disagree)</option>
+		           </select>
+		           <br><br>
+
+                <button type="submit" class="button btn btn-success btn-lg formSubmit">Submit</button>
+		    </form>
+	    </div>
+
+	  </div>   	
+	  
+		<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Best Match</h4>
+			</div>
+			<div class="modal-body">
+				<h2>Name: <span id="bestMatchName"></span></h2>
+				<h2>Photo: <span id="bestMatchPhoto"></span></h2>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+			</div>
+		</div>
+		</div>
+
+   </div>
+
+   <script type="text/javascript">
+   $(".formSubmit").on("click", function(event) {
+		event.preventDefault();
+		
+		var newFriend = {name: $("#name").val().trim(), photo: $("#photo").val().trim(), 
+		scores: [$("#q1").val().charAt(0), $("#q2").val().charAt(0), $("#q3").val().charAt(0),
+		$("#q4").val().charAt(0), $("#q5").val().charAt(0), $("#q6").val().charAt(0), $("#q7").val().charAt(0),
+		 $("#q8").val().charAt(0), $("#q9").val().charAt(0), $("#q10").val().charAt(0),]}
+		console.log(newFriend); 
+
+		$.post("/api/survey", newFriend, function(data) {
+			if (data || data === 0) {
+				alert("Boom! added to the official friends list");
+				console.log(data);
+			}
+			else {
+				alert("something went wrong, you have not been added");
+			}
+
+			$("#name").val("");
+			$("#photo").val("");
+			$(".select").val("select an option");
+
+			runFriendsQuery(data);
+		});
+    });
+
+    function runFriendsQuery(match) {
+		console.log("runFriendsQuery is working");
+
+      //get the location of the root page.
+      var currentURL = window.location.origin;
+
+      // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+      $.ajax({ url: currentURL + "/api/friends", method: "GET" })
+      .done(function(friendsData) {
+
+        // Here we are logging the URL so we have access to it for troubleshooting
+        console.log("------------------------------------");
+        console.log("URL: " + currentURL + "/api/friends");
+        console.log("------------------------------------");
+
+        console.log(friendsData[match]);
+        console.log("------------------------------------");
+    
+	    var bestMatch = friendsData[match];
+		$("#bestMatchName").html(bestMatch.name);
+		$("#bestMatchPhoto").html(bestMatch.photo);
+		$("#myModal").modal("toggle");
+      });
+    }
+
+   	
+   </script>
+   </body>
+</html>
