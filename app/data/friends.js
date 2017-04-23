@@ -59,6 +59,21 @@ var friendsArray = [{
         4,
         3
     ]
+},{
+    name: "Kirk",
+    photo: "<img class='photos' src='http://www.thefamouspeople.com/profiles/images/kirk-hammett-2.jpg'/>",
+    scores: [
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+    ]
 }]
 
 module.exports = friendsArray;
