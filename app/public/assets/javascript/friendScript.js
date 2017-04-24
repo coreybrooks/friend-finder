@@ -4,7 +4,7 @@
 		var link = $("#photo").val().trim();
 		var photoLink = "<img class='photos' src='" + link + "'/>";
 
-			
+		//new friend object to be posted	
 		var newFriend = {name: $("#name").val().trim(), photo: photoLink, 
 		scores: [$("#q1").val().charAt(0), $("#q2").val().charAt(0), $("#q3").val().charAt(0),
 		$("#q4").val().charAt(0), $("#q5").val().charAt(0), $("#q6").val().charAt(0), $("#q7").val().charAt(0),
@@ -27,7 +27,8 @@
         else { 
 			postRequest();
 		}
-
+        
+        //AJAX post request
 		function postRequest() {
 			$.post("/api/survey", newFriend, function(data) {
 				if (data || data === 0) {
