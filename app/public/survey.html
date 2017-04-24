@@ -174,61 +174,6 @@
 
    </div>
 
-   <script type="text/javascript">
-   $(".formSubmit").on("click", function(event) {
-		event.preventDefault();
-		var link = $("#photo").val().trim();
-		var photoLink = "<img class='photos' src='" + link + "'/>";
-		
-		var newFriend = {name: $("#name").val().trim(), photo: photoLink, 
-		scores: [$("#q1").val().charAt(0), $("#q2").val().charAt(0), $("#q3").val().charAt(0),
-		$("#q4").val().charAt(0), $("#q5").val().charAt(0), $("#q6").val().charAt(0), $("#q7").val().charAt(0),
-		 $("#q8").val().charAt(0), $("#q9").val().charAt(0), $("#q10").val().charAt(0),]}
-		console.log(newFriend); 
-
-		$.post("/api/survey", newFriend, function(data) {
-			if (data || data === 0) {
-				alert("Boom! added to the official friends list");
-				console.log(data);
-			}
-			else {
-				alert("something went wrong, you have not been added");
-			}
-
-			$("#name").val("");
-			$("#photo").val("");
-			$(".select").val("select an option");
-
-			runFriendsQuery(data);
-		});
-    });
-
-    function runFriendsQuery(match) {
-		console.log("runFriendsQuery is working");
-
-      //get the location of the root page.
-      var currentURL = window.location.origin;
-
-      // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
-      $.ajax({ url: currentURL + "/api/friends", method: "GET" })
-      .done(function(friendsData) {
-
-        // Here we are logging the URL so we have access to it for troubleshooting
-        console.log("------------------------------------");
-        console.log("URL: " + currentURL + "/api/friends");
-        console.log("------------------------------------");
-
-        console.log(friendsData[match]);
-        console.log("------------------------------------");
-    
-	    var bestMatch = friendsData[match];
-		$("#bestMatchName").html(bestMatch.name);
-		$("#bestMatchPhoto").html(bestMatch.photo);
-		$("#myModal").modal("toggle");
-      });
-    }
-
-   	
-   </script>
+   <script src="/assets/javascript/friendScript.js"></script>
    </body>
 </html>
