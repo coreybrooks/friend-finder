@@ -10,4 +10,4 @@ The application stores the user as a new "friend" in a JSON object and compares 
 
 The complete JSON object of existing friends can be viewed on the route api/friends. A link to the route is included on each page.
 
-This application has been uploaded to Heroku and can be viewed here: [corey-friend-finder](https://github.com/coreybrooks/friend-finder)
+This application has been uploaded to Heroku and can be viewed here: [corey-friend-finder](https://corey-friend-finder.herokuapp.com/)
