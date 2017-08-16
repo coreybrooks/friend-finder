@@ -1,7 +1,7 @@
 # Friend Finder
 
 ## Overview
-Friend Finder is similar to a dating app.  This is a full-stack Rest-like API website which sets the HTML and API routes for posting and requesting data through Express and Node.JS. 
+Friend Finder is similar to a dating app. This is a full stack RESTful API application which sets the HTML and API routes for posting and requesting data through Express and Node.JS. 
 
 ## Functionality
 The application prompts the user to enter their name and link to their photo.  It then asks the user to answer 10 survey questions using a scale from 1 to 5.  
